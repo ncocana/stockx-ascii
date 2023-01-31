@@ -1,18 +1,18 @@
-package src.main;
+package src.main.java.edu.craptocraft.stockx;
 
-import src.main.domain.item.Item;
-import src.main.domain.item.Offer;
-import src.main.domain.item.Sneaker;
-import src.main.domain.item.Bid;
-import src.main.domain.item.Ask;
-import src.main.domain.criteria.Criteria;
-import src.main.domain.criteria.Bids;
-import src.main.domain.criteria.MaxBid;
-import src.main.domain.criteria.MinAsk;
+import src.main.java.edu.craptocraft.stockx.item.Item;
+import src.main.java.edu.craptocraft.stockx.item.Offer;
+import src.main.java.edu.craptocraft.stockx.item.Sneaker;
+import src.main.java.edu.craptocraft.stockx.item.Bid;
+import src.main.java.edu.craptocraft.stockx.item.Ask;
+import src.main.java.edu.craptocraft.stockx.criteria.Criteria;
+import src.main.java.edu.craptocraft.stockx.criteria.Bids;
+import src.main.java.edu.craptocraft.stockx.criteria.MaxBid;
+import src.main.java.edu.craptocraft.stockx.criteria.MinAsk;
 
 import java.util.List;
 
-import src.main.domain.criteria.Asks;
+import src.main.java.edu.craptocraft.stockx.criteria.Asks;
 
 /**
  * StockX nació en Detroit, y allí siguen haciendo

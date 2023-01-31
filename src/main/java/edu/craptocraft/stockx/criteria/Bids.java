@@ -1,12 +1,12 @@
-package src.main.domain.criteria;
+package src.main.java.edu.craptocraft.stockx.criteria;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import src.main.domain.item.Offer;
-import src.main.domain.item.Item;
-import src.main.domain.item.Bid;
+import src.main.java.edu.craptocraft.stockx.item.Offer;
+import src.main.java.edu.craptocraft.stockx.item.Item;
+import src.main.java.edu.craptocraft.stockx.item.Bid;
 
 public class Bids implements Criteria{
     

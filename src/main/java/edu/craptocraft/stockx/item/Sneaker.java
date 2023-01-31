@@ -1,4 +1,4 @@
-package src.main.domain.item;
+package src.main.java.edu.craptocraft.stockx.item;
 
 import java.util.ArrayList;
 import java.util.List;
