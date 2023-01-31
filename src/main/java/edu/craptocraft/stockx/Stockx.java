@@ -258,7 +258,4 @@ public class Stockx {
         "\t" + sneaker.toString() + "\n" +
         "\t\tlast sale: " + sneaker.getSale();
     }
-
-    private void print(Offer offer1) {
-    }
 }
