@@ -1,18 +1,18 @@
-package src.main.java.edu.craptocraft.stockx;
+package edu.craptocraft.stockx;
 
-import src.main.java.edu.craptocraft.stockx.item.Item;
-import src.main.java.edu.craptocraft.stockx.item.Offer;
-import src.main.java.edu.craptocraft.stockx.item.Sneaker;
-import src.main.java.edu.craptocraft.stockx.item.Bid;
-import src.main.java.edu.craptocraft.stockx.item.Ask;
-import src.main.java.edu.craptocraft.stockx.criteria.Criteria;
-import src.main.java.edu.craptocraft.stockx.criteria.Bids;
-import src.main.java.edu.craptocraft.stockx.criteria.MaxBid;
-import src.main.java.edu.craptocraft.stockx.criteria.MinAsk;
+import edu.craptocraft.stockx.item.Item;
+import edu.craptocraft.stockx.item.Offer;
+import edu.craptocraft.stockx.item.Sneaker;
+import edu.craptocraft.stockx.item.Bid;
+import edu.craptocraft.stockx.item.Ask;
+import edu.craptocraft.stockx.criteria.Criteria;
+import edu.craptocraft.stockx.criteria.Bids;
+import edu.craptocraft.stockx.criteria.Asks;
+import edu.craptocraft.stockx.criteria.MaxBid;
+import edu.craptocraft.stockx.criteria.MinAsk;
 
 import java.util.List;
 
-import src.main.java.edu.craptocraft.stockx.criteria.Asks;
 
 /**
  * StockX nació en Detroit, y allí siguen haciendo
@@ -257,5 +257,8 @@ public class Stockx {
         
         "\t" + sneaker.toString() + "\n" +
         "\t\tlast sale: " + sneaker.getSale();
+    }
+
+    private void print(Offer offer1) {
     }
 }

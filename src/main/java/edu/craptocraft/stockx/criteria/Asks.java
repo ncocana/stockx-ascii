@@ -1,15 +1,18 @@
-package src.main.java.edu.craptocraft.stockx.criteria;
+package edu.craptocraft.stockx.criteria;
 
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import src.main.java.edu.craptocraft.stockx.item.Offer;
-import src.main.java.edu.craptocraft.stockx.item.Ask;
-import src.main.java.edu.craptocraft.stockx.item.Item;
+import edu.craptocraft.stockx.item.Offer;
+import edu.craptocraft.stockx.item.Ask;
+import edu.craptocraft.stockx.item.Item;
 
 public class Asks implements Criteria{
     
+    /* (non-Javadoc)
+     * @see edu.craptocraft.stockx.criteria.Criteria#checkCriteria(edu.craptocraft.stockx.item.Item)
+     */
     @Override
     public List<Offer> checkCriteria(Item sneaker) {
         return sneaker.offers()

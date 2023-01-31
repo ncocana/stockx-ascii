@@ -1,11 +1,11 @@
-package src.main.java.edu.craptocraft.stockx.criteria;
+package edu.craptocraft.stockx.criteria;
 
 import java.util.List;
 import java.util.Optional;
 
-import src.main.java.edu.craptocraft.stockx.item.Offer;
-import src.main.java.edu.craptocraft.stockx.item.Bid;
-import src.main.java.edu.craptocraft.stockx.item.Item;
+import edu.craptocraft.stockx.item.Offer;
+import edu.craptocraft.stockx.item.Bid;
+import edu.craptocraft.stockx.item.Item;
 
 public class MaxBid implements Criteria{
     
