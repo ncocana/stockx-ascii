@@ -5,9 +5,11 @@ import edu.craptocraft.stockx.item.Offer;
 import edu.craptocraft.stockx.item.Sneaker;
 import edu.craptocraft.stockx.item.Bid;
 import edu.craptocraft.stockx.item.Ask;
+import edu.craptocraft.stockx.item.Sale;
 import edu.craptocraft.stockx.criteria.Criteria;
 import edu.craptocraft.stockx.criteria.Bids;
 import edu.craptocraft.stockx.criteria.Asks;
+import edu.craptocraft.stockx.criteria.Sales;
 import edu.craptocraft.stockx.criteria.MaxBid;
 import edu.craptocraft.stockx.criteria.MinAsk;
 
@@ -130,30 +132,30 @@ public class Stockx {
         sneaker.setAsk(minimum.isEmpty()? 0 : minimum.get(0).value());
         System.out.println(Stockx.draw(sneaker));
 
-        // /**
-        //  * Añade ventas (sales) de 
-        //  * una zapatilla a sus offers.
-        //  * Las ventas se añaden segun fecha
-        //  * en la que se producen, de mas antigua
-        //  * a mas reciente.
-        //  */
+        /**
+         * Añade ventas (sales) de 
+         * una zapatilla a sus offers.
+         * Las ventas se añaden segun fecha
+         * en la que se producen, de mas antigua
+         * a mas reciente.
+         */
 
-        // Sale sale = new Sale("6", 356);
-        // sneaker.add(sale);
-        // sneaker.add(new Sale("9.5", 352));
-        // sneaker.add(new Sale("9.5", 404));
-        // sneaker.add(new Sale("13", 360));
-        // sneaker.add(new Sale("13", 372));
+        Sale sale = new Sale("6", 356);
+        sneaker.add(sale);
+        sneaker.add(new Sale("9.5", 352));
+        sneaker.add(new Sale("9.5", 404));
+        sneaker.add(new Sale("13", 360));
+        sneaker.add(new Sale("13", 372));
 
-        // /**
-        //  * Crear el filtro "Sales" que filtra
-        //  * solo las ventas /sales de entre las 
-        //  * offers de la zapatilla.
-        //  */
+        /**
+         * Crear el filtro "Sales" que filtra
+         * solo las ventas /sales de entre las 
+         * offers de la zapatilla.
+         */
 
-        // Criteria sales = new Sales();
-        // System.out.println("\n\t\t All SALES");
-        // sales.checkCriteria(sneaker).forEach(System.out::print);
+        Criteria sales = new Sales();
+        System.out.println("\n\t\t All SALES");
+        sales.checkCriteria(sneaker).forEach(System.out::print);
         
         // /**
         //  * Crea un filtro que devuelva
