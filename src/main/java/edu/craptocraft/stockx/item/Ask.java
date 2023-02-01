@@ -21,9 +21,10 @@ public class Ask implements Offer{
     }
 
     @Override
-    public int compareTo(Offer ask) {
+    public int compareTo(Offer offerAsk) {
         // Must be Integer instead of int to work.
-        return this.ask.compareTo(ask.value());
+        // Compares ask's value to offerAsk's value.
+        return this.ask.compareTo(offerAsk.value());
     }
 
     @Override
