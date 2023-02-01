@@ -22,6 +22,7 @@ public class Bid implements Offer {
 
     @Override
     public int compareTo(Offer bid) {
+        // Must be Integer instead of int to work.
         return this.bid.compareTo(bid.value());
     }
 
