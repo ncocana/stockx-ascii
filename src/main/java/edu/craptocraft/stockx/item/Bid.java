@@ -2,8 +2,8 @@ package edu.craptocraft.stockx.item;
 
 public class Bid implements Offer {
     
-    public String size;
-    public int bid = 0;
+    public String size = "";
+    public Integer bid = 0;
 
     public Bid(String size, int bid) {
         this.size = size;
@@ -22,12 +22,12 @@ public class Bid implements Offer {
 
     @Override
     public int compareTo(Offer bid) {
-        return this.value();
+        return this.bid.compareTo(bid.value());
     }
 
     @Override
     public String toString() {
-        return "\n" + size() + "\t" + value();
+        return "\n\t\t" + size() + "\t" + value();
     }
 
 }

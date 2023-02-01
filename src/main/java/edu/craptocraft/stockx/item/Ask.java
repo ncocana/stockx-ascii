@@ -2,8 +2,8 @@ package edu.craptocraft.stockx.item;
 
 public class Ask implements Offer{
     
-    public final String size;
-    public final int ask;
+    private String size = "";
+    private Integer ask = 0;
 
     public Ask(String size, int ask) {
         this.size = size;
@@ -22,12 +22,12 @@ public class Ask implements Offer{
 
     @Override
     public int compareTo(Offer ask) {
-        return this.value();
+        return this.ask.compareTo(ask.value());
     }
 
     @Override
     public String toString() {
-        return "\n" + size() + "\t" + value();
+        return "\n\t\t" + this.size() + "\t" + this.value();
     }
 
 }
