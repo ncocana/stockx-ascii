@@ -12,6 +12,7 @@ import edu.craptocraft.stockx.criteria.Asks;
 import edu.craptocraft.stockx.criteria.Sales;
 import edu.craptocraft.stockx.criteria.MaxBid;
 import edu.craptocraft.stockx.criteria.MinAsk;
+import edu.craptocraft.stockx.criteria.LastSale;
 
 import java.util.List;
 
@@ -157,18 +158,18 @@ public class Stockx {
         System.out.println("\n\t\t All SALES");
         sales.checkCriteria(sneaker).forEach(System.out::print);
         
-        // /**
-        //  * Crea un filtro que devuelva
-        //  * la ULTIMA de las ventas (que 
-        //  * es la ultima en ser incluida
-        //  * en sneaker).
-        //  */
+        /**
+         * Crea un filtro que devuelva
+         * la ULTIMA de las ventas (que 
+         * es la ultima en ser incluida
+         * en sneaker).
+         */
         
-        // Criteria lastSale = new LastSale();
+        Criteria lastSale = new LastSale();
         
-        // List<Offer> actualSale = lastSale.checkCriteria(sneaker);
-        // sneaker.setSale(actualSale.isEmpty()? 0 : actualSale.get(0).value());
-        // System.out.println(Stockx.draw(sneaker));
+        List<Offer> actualSale = lastSale.checkCriteria(sneaker);
+        sneaker.setSale(actualSale.isEmpty()? 0 : actualSale.get(0).value());
+        System.out.println(Stockx.draw(sneaker));
 
         // /**
         //  * Mostrar info de la zapatilla 
