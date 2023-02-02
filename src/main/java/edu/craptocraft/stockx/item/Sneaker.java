@@ -5,11 +5,11 @@ import java.util.List;
 
 public class Sneaker implements Item {
     
-    public final String style;
-    public final String name;
-    public int sale;
-    public int ask;
-    public int bid;
+    private String style = "";
+    private String name = "";
+    private int sale = 0;
+    private int ask = 0;
+    private int bid = 0;
     private List<Offer> offers = new ArrayList<Offer>();
 
     public Sneaker(String style, String name) {
@@ -46,11 +46,6 @@ public class Sneaker implements Item {
     }
 
     @Override
-    public String toString() {
-        return getName() + "\n\t\t" + getStyle();
-    }
-
-    @Override
     public void add(Offer offer) {
         this.offers.add(offer);
         
@@ -72,6 +67,11 @@ public class Sneaker implements Item {
     public void setSale(int sale) {
         this.sale = sale;
         
+    }
+
+    @Override
+    public String toString() {
+        return getName() + "\n\t\t" + getStyle();
     }
 
 }
