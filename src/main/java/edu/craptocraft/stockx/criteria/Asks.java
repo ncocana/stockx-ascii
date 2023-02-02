@@ -9,10 +9,7 @@ import edu.craptocraft.stockx.item.Item;
 
 public class Asks implements Criteria{
     
-    /* (non-Javadoc)
-     * @see edu.craptocraft.stockx.criteria.Criteria#checkCriteria(edu.craptocraft.stockx.item.Item)
-     */
-    @Override
+   @Override
     public List<Offer> checkCriteria(Item sneaker) {
         return sneaker.offers()
                         .stream()
