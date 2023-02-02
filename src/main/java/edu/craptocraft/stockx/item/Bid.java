@@ -2,8 +2,8 @@ package edu.craptocraft.stockx.item;
 
 public class Bid implements Offer {
     
-    public String size = "";
-    public Integer bid = 0;
+    private String size = "";
+    private Integer bid = 0;
 
     public Bid(String size, int bid) {
         this.size = size;
