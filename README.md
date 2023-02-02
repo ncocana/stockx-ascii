@@ -1,5 +1,23 @@
-StockX ASCII
-============
+# StockX ASCII
+
+**Table of contents**
+
+-   [**Introducción**](#introducción)
+-   [**Instrucciones**](#instrucciones)
+-   [**Salida de la aplicación**](#salida-de-la-aplicación)
+-   [**Diagrama de clases UML / Arquitectura de la app**](#diagrama-de-clases-uml--arquitectura-de-la-app)
+-   [**Historias de usuario / casos de uso**](#historias-de-usuario--casos-de-uso)
+-   [**Prepara el proyecto**](#prepara-el-proyecto)
+-   [**Cómo entregar el código**](#cómo-entregar-el-código)
+
+## Introducción
+
+Examen de práctica realizado para entender mejor cómo funciona las listas en Java.  
+
+Readme sacado del repositorio de nuestro profesor, [dfleta](https://github.com/dfleta/stockx-ascii).  
+
+
+## Instrucciones
 
 StockX nació en Detroit, y allí siguen haciendo las cosas de manera tradicional, robustas y con alma, en ASCII en la CLI.
 
@@ -13,8 +31,7 @@ Si tienes dudas, puedes interactuar con la webapp based in London que sí que ti
 [www.stockx.com](https://stockx.com/air-jordan-1-retro-high-dark-mocha)
 
 
-
- ## Salida de la aplicación
+## Salida de la aplicación
 
 Intenta que la salida del programa por CLI sea lo más parecida posible a las imágenes que se proporcionan. Cada una de ellas se corresponde con una de las historias de usuario que se detallan en los epígrafes siguientes.
 
@@ -35,7 +52,7 @@ Intenta que la salida del programa por CLI sea lo más parecida posible a las im
 !["Historias de usuario"](./salida_CLI/ui_08.png "sneaker info size 9.5 CLI")
 
 
-## Diagrama de clases UML / Arquitectura de la app.
+## Diagrama de clases UML / Arquitectura de la app
 
 Sigue el diagrama de clase UML proporcionado para construir la aplicación.
 Si añades algún componente, dibújalo a mano alzada sobre el diagrama.
@@ -43,7 +60,7 @@ Si añades algún componente, dibújalo a mano alzada sobre el diagrama.
 !["Diagrama de clases UML"](./diagrama_clases_UML_inked.jpg)
 
 
-## Historias de usuario /casos de uso
+## Historias de usuario / casos de uso
 
 Las historias de usuario están enunciadas en el script principal `Stockx.java`
 
@@ -100,5 +117,3 @@ Las historias de usuario están enunciadas en el script principal `Stockx.java`
  2. **Realiza commits periódicamente** mientras avanzas en el desarrollo de la aplicación. Sin commit periódicos, no corrijo el examen.
  3. Realiza un `push` al repo remoto en GitHub **SOLO cuando hayas terminado el proyecto**.
  3. Si quieres, si vas a dormir mejor, desde Eclipse /Netbeans /IntelIJ exporta el proyecto a un fichero. En VSCode, comprime en un ZIP la carpeta del proyecto. Envíame el archivo ZIP por correo electrónico. **No se admiten ficheros .rar**.
-
-
