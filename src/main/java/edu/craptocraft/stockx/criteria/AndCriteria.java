@@ -16,11 +16,18 @@ public class AndCriteria implements Criteria{
         this.otherCriteria = otherCriteria;
     }
 
+    // Returns a list of Offer objects that meet both
+    // the criteria stored in the 'criteria' and 'otherCriteria' objects.
     @Override
     public List<Offer> checkCriteria(Item sneaker) {
         List<Offer> firstCriteriaItems = criteria.checkCriteria(sneaker);
         List<Offer> otherCriteriaItems = otherCriteria.checkCriteria(sneaker);
 
+        // Filters 'firstCriteriaItems' and retain only
+        // the elements that are contained in 'otherCriteriaItems'.
+        // This filtered list is collected into a new list using
+        // the 'Collectors.toList' method and returned as the result
+        // of the 'checkCriteria' method.
         return firstCriteriaItems.stream()
                                     .filter(otherCriteriaItems::contains)
                                     .collect(Collectors.toList());
